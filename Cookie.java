@@ -18,14 +18,17 @@ class Cookie {
     this.bakeTime = time;
     this.baked = false;
   }
+
   // accessor for isReady():
   public boolean isReady() {
     return this.baked;
   }
+
   // mutator for number available:
   public void setNumber(int num){ // @param: num
     this.number = num;
   }
+  
   // method to bake cookies:
   public void bake(int temp, int time) { // @param: temp, time
     this.bakeTemp = temp;

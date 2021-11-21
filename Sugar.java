@@ -3,6 +3,7 @@ public class Sugar extends Cookie {
   // instance variables:
   private String shape;
   private boolean decorated;
+
   // two constructors
   public Sugar() {
     this.shape = "";
@@ -12,10 +13,12 @@ public class Sugar extends Cookie {
     this.shape = aShape;
     this.decorated = false;
   }
+
   // accessor for shape:
   public String getShape(){
     return shape;
   }
+  
   // mutator for shape;
   public void setShape(String aShape) { // @param: aShape
     this.shape = aShape;
