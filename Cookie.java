@@ -12,7 +12,7 @@ class Cookie {
     this.bakeTime = 0;
     this.baked = false;
   }
-  public Cookie(int num, int temp, int time){
+  public Cookie(int num, int temp, int time){ // @param: num, temp, time
     this.number = num;
     this.bakeTemp = temp;
     this.bakeTime = time;
@@ -23,14 +23,14 @@ class Cookie {
     return this.baked;
   }
   // mutator for number available:
-  public void setNum(int num){
+  public void setNumber(int num){ // @param: num
     this.number = num;
   }
   // method to bake cookies:
-  public void bake(int temp, int time) {
+  public void bake(int temp, int time) { // @param: temp, time
     this.bakeTemp = temp;
     this.bakeTime = time;
-    System.out.println(this.number + " cookies were baked at " + 
+    System.out.println("The " + this.number + " cookies were baked at " + 
     this.bakeTemp + " degrees F for " + this.bakeTime + " minutes.");
     this.baked = true; // cookies have been baked. set to true
   }
